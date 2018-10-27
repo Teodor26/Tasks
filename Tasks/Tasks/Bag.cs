@@ -17,5 +17,18 @@ namespace Tasks
             else
             return Proitaze +(Difficulty/10+1);
         }
+
+        
+        public double Sub = 30;
+        public double Calc()
+        {
+            for (int i = 0; i < 30; i++)
+            {
+
+                Sub = -Time();
+
+            }
+            return Sub;
+        }
     }
 }
