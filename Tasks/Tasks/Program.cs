@@ -10,7 +10,7 @@ namespace Tasks
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
+            
 
 
         }
