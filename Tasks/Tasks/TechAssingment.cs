@@ -20,20 +20,22 @@ namespace Tasks
         }
 
         public double Sub = 30;
-        public double Calc()
+        public void Calc()
         {
             for (int i = 0; i < 30; i++)
             {
-
-                Sub = -Time();
-
+                Sub = Sub - Time();
+                if (Sub < 0)
+                {
+                    Console.WriteLine($"{30-i} has been made.");
+                    break;
+                }
+               
+               
             }
-            return Sub;
+           
         }
 
-        internal void Name(string v)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

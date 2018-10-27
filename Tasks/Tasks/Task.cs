@@ -16,7 +16,7 @@ namespace Tasks
         {
             Solved = false;
             Name = n;
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(4000);
             Random rand = new Random();
             Difficulty = rand.Next(1, 5);
         }

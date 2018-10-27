@@ -22,7 +22,7 @@ namespace Tasks
                     Bag bag = new Bag();
                     Console.WriteLine("Name your task");
                     bag.NewTask(Console.ReadLine());
-                    Console.WriteLine(bag.Calc());
+                    bag.Calc();
                     break;
 
                 case 2:
@@ -30,14 +30,14 @@ namespace Tasks
                     Ficha ficha = new Ficha();
                     Console.WriteLine("Name your task");                    
                     ficha.NewTask(Console.ReadLine());
-                    Console.WriteLine(ficha.Calc());
+                    ficha.Calc();
                     break;
 
                 case 3:
                     TechAssingment techAssingment = new TechAssingment();
                     Console.WriteLine("Name your task");
                     techAssingment.NewTask(Console.ReadLine());
-                    Console.WriteLine(techAssingment.Calc());
+                    techAssingment.Calc();
                     break;
 
             }
