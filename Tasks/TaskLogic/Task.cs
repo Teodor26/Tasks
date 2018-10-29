@@ -21,6 +21,7 @@ namespace TaskLogic
         }
         public abstract double Time();
         public bool [] DataBase=new bool [100];
-        public double time;
+        public string [] name=new string [100];
+        
         }
 }

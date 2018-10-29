@@ -17,20 +17,28 @@ namespace TaskLogic
                 return Proitaze + (Difficulty / 10 + 1);
         }
 
-        public double Calc()
+        public double Calc(double time)
         {
             time =30-Time() ;
             for (int i = 0; i < DataBase.Length; i++)
             {
-                if (time <= 30)
+                if (DataBase[i] == false)
                 {
-                    DataBase[i] = true;
-                    break;
-                }
-                else
-                {
-                    DataBase[i] = false;
-                    break;
+                    if (time <= 30)
+                    {                        
+                        for (int j = 0; j < name.Length; j++)
+                        {
+                            name[j] = Name;
+                            break;
+                        }
+                        DataBase[i] = true;
+                        break;
+                    }
+                    else
+                    {
+                        DataBase[i] = false;
+                        break;
+                    }
                 }
             }
 
